@@ -618,11 +618,11 @@
         var gitalk = new Gitalk({
           clientID: '5c2c9d06e1690b2a957b',
           clientSecret: '4b927bdf19ae405389a2fe663877db24359ae798',
-          repo: 'Blog',
+          repo: 'qnsak.github.io',
           owner: 'qnsak',
           admin: ['qnsak'],
           id: location.pathname,
-          labels: '-gitalk',
+          labels: '-gitalk'.split(',').filter(l => l),
           perPage: 15,
           pagerDirection: 'last',
           createIssueManually: true,
